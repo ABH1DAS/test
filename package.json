@@ -1,9 +1,12 @@
 {
+  "homepage": "https://ABH1DAS.github.io/test",
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "next build",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start"
